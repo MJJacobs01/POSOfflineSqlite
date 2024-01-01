@@ -28,9 +28,9 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.gridlayout:gridlayout:1.0.0")
     implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     
     implementation("com.jakewharton:butterknife:8.6.0")
-    implementation("androidx.core:core-ktx:+")
     annotationProcessor("com.jakewharton:butterknife-compiler:8.6.0")
     
     testImplementation("junit:junit:4.13.2")
