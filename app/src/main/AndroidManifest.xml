@@ -7,8 +7,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.lupawktu.possqlite.LoginActivity"
-            android:screenOrientation="portrait">
+        <activity
+            android:name="com.lupawktu.possqlite.activity.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,23 +17,29 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegisterActivity"
+        <activity
+            android:name=".RegisterActivity"
             android:label="Create New Account"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CreateNewStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateNewStore"
             android:label="Create New Store"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".DisplayStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayStore"
             android:label="My Store"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MainMenu"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ProductCategory"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AddProductActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
