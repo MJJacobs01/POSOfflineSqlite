@@ -3,7 +3,6 @@ package com.lupawktu.possqlite.productcategory;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.design.widget.TabLayout;
 import android.util.Log;
 
 import com.lupawktu.possqlite.PublicMethod.GetDateNow;

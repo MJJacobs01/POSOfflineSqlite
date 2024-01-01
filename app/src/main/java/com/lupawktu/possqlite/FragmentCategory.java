@@ -2,10 +2,10 @@ package com.lupawktu.possqlite;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.util.Log;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AlertDialog;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,8 +24,6 @@ import com.lupawktu.possqlite.productcategory.CategoryModel;
 import com.lupawktu.possqlite.productcategory.PCProses;
 import com.lupawktu.possqlite.reponse.ResponseModel;
 import com.lupawktu.possqlite.reponse.ResponseView;
-
-import org.json.JSONArray;
 
 import java.util.ArrayList;
 
