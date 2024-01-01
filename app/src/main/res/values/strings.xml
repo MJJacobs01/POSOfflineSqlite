@@ -11,4 +11,14 @@
     <string name="user">user</string>
     <string name="order">order</string>
     <string name="order_detail">order_detail</string>
+    <string name="pos_icon">POS Icon</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">- OR -</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="offline_pos">Offline POS</string>
+    <string name="navigate_back_icon">Navigate back icon</string>
+    <string name="more_options">More options</string>
 </resources>
