@@ -18,23 +18,20 @@ import com.lupawktu.possqlite.reponse.ResponseModel;
 import com.lupawktu.possqlite.user.UserProses;
 import com.lupawktu.possqlite.reponse.ResponseView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 5/30/2017.
  */
 
 public class RegisterActivity extends AppCompatActivity implements ResponseView {
-    @BindView(R.id.register)
+
     Button register;
-    @BindView(R.id.username)
+
     EditText username;
-    @BindView(R.id.name)
+
     EditText name;
-    @BindView(R.id.email)
+
     EditText email;
-    @BindView(R.id.password)
+
     EditText password;
 
     UserProses proses = new UserProses(this);
@@ -43,7 +40,6 @@ public class RegisterActivity extends AppCompatActivity implements ResponseView 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        ButterKnife.bind(this);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         register.setOnClickListener(new View.OnClickListener() {

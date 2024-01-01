@@ -8,14 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 6/3/2017.
  */
 public class FragmentProduct extends Fragment {
-    @BindView(R.id.list)
     ListView listView;
 
     @Nullable
@@ -27,6 +23,5 @@ public class FragmentProduct extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ButterKnife.bind(this, view);
     }
 }

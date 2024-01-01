@@ -15,18 +15,15 @@ import com.lupawktu.possqlite.db.DBApps;
 import com.lupawktu.possqlite.reponse.ResponseModel;
 import com.lupawktu.possqlite.reponse.ResponseView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, ResponseView {
-    @BindView(R.id.login)
+
     Button login;
-    @BindView(R.id.register)
+
     Button register;
 
-    @BindView(R.id.username)
+
     EditText username;
-    @BindView(R.id.password)
+
     EditText password;
 
     private DBApps dbApps = new DBApps(this);
@@ -38,7 +35,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
 
         sessionLogin = new SessionLogin(this);
         if(is_logged_in == sessionLogin.isLoggedIn()){

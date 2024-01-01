@@ -23,14 +23,11 @@ import com.lupawktu.possqlite.store.StoreProses;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 5/31/2017.
  */
 public class DisplayStore extends AppCompatActivity implements ResponseView, AdapterView.OnItemClickListener {
-    @BindView(R.id.grid)
+
     GridView grid;
 
     StoreProses proses = new StoreProses(this);
@@ -43,7 +40,6 @@ public class DisplayStore extends AppCompatActivity implements ResponseView, Ada
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_store);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ButterKnife.bind(this);
         sessionLogin = new SessionLogin(this);
         sessionLogin.checkLogin();
         getDataDisplayStore();

@@ -21,20 +21,17 @@ import com.lupawktu.possqlite.reponse.ResponseModel;
 import com.lupawktu.possqlite.reponse.ResponseView;
 import com.lupawktu.possqlite.store.StoreProses;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 5/31/2017.
  */
 public class CreateNewStore extends AppCompatActivity implements View.OnClickListener, ResponseView {
-    @BindView(R.id.storename)
+
     EditText storename;
-    @BindView(R.id.description)
+
     EditText description;
-    @BindView(R.id.address)
+
     EditText address;
-    @BindView(R.id.create)
+
     Button create;
 
     StoreProses proses;
@@ -45,7 +42,6 @@ public class CreateNewStore extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_store);
-        ButterKnife.bind(this);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         proses = new StoreProses(this);

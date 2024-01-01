@@ -27,16 +27,13 @@ import com.lupawktu.possqlite.reponse.ResponseView;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 6/3/2017.
  */
 public class FragmentCategory extends Fragment implements ResponseView {
-    @BindView(R.id.list)
+
     ListView listView;
-    @BindView(R.id.nodata)
+
     TextView nodata;
 
     PCProses proses = new PCProses(this);
@@ -55,7 +52,6 @@ public class FragmentCategory extends Fragment implements ResponseView {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ButterKnife.bind(this, view);
         dbApps = new DBApps(getActivity());
         sessionLogin = new SessionLogin(getActivity());
         defaultStore = new SetDefaultStore(getActivity());

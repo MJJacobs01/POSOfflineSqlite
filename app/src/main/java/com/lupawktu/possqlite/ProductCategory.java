@@ -24,20 +24,17 @@ import com.lupawktu.possqlite.productcategory.PCProses;
 import com.lupawktu.possqlite.reponse.ResponseModel;
 import com.lupawktu.possqlite.reponse.ResponseView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 6/3/2017.
  */
 public class ProductCategory extends AppCompatActivity implements View.OnClickListener, ResponseView {
-    @BindView(R.id.tab_layout)
+
     TabLayout tabLayout;
-    @BindView(R.id.viewPager)
+
     ViewPager viewPager;
-    @BindView(R.id.toolbar)
+
     Toolbar toolbar;
-    @BindView(R.id.fab_add)
+
     FloatingActionButton add;
 
     PCProses proses;
@@ -47,7 +44,6 @@ public class ProductCategory extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_n_category);
-        ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Product & Category");

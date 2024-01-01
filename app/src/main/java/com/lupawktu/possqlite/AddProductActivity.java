@@ -8,23 +8,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by Mind on 6/4/2017.
  */
 public class AddProductActivity extends AppCompatActivity{
-    @BindView(R.id.toolbar)
+
     Toolbar toolbar;
-    @BindView(R.id.chooseCategory)
+
     RelativeLayout choose;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
-        ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add Product");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
