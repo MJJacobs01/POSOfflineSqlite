@@ -4,14 +4,16 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.lupawktu.possqlite.db.TableClass;
-
 /**
  * Created by Mind on 5/29/2017.
  */
 
+/**
+ * todo - Add in room to make database operations easier
+ */
+
 public class DBApps extends SQLiteOpenHelper{
-    private TableClass tableClass = new TableClass();
+    private final TableClass tableClass = new TableClass();
     public DBApps(Context context) {
         super(context, "dbPos", null, 1);
     }

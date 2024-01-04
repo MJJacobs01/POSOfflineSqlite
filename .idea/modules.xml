@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/POSWithRealmDB.iml" filepath="$PROJECT_DIR$/POSWithRealmDB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/POSOfflineSqlite.iml" filepath="$PROJECT_DIR$/.idea/modules/POSOfflineSqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/POSOfflineSqlite.app.unitTest.iml" />
     </modules>
   </component>
 </project>
