@@ -4,62 +4,62 @@ package com.lupawktu.possqlite.db;
  * Created by Mind on 5/30/2017.
  */
 public class TableClass {
-    public static String user = "user";
+//    public static String user = "user";
     public static String order = "order_product";
-    public static String store = "store";
+//    public static String store = "store";
     public static String category = "category";
     public static String order_detail = "order_detail";
-    public static String store_detail = "store_detail";
+//    public static String store_detail = "store_detail";
     public static String category_detail = "category_detail";
     public static String product = "product";
     public static String product_detail = "product_detail";
 
-    private String tbUserCreate = "create table if not exists "+user+"(" +
-            "username text PRIMARY KEY," +
-            "name text," +
-            "email text," +
-            "level text," +
-            "create_at datetime default current_timestamp," +
-            "password text," +
-            "secret_key text," +
-            "UNIQUE (email) ON CONFLICT REPLACE)";
+//    private String tbUserCreate = "create table if not exists "+user+"(" +
+//            "username text PRIMARY KEY," +
+//            "name text," +
+//            "email text," +
+//            "level text," +
+//            "create_at datetime default current_timestamp," +
+//            "password text," +
+//            "secret_key text," +
+//            "UNIQUE (email) ON CONFLICT REPLACE)";
 
-    private String tbStoreCreate = "create table if not exists "+store+"(" +
-            "id_store text PRIMARY KEY," +
-            "username text," +
-            "create_at datetime default current_timestamp)";
+//    private String tbStoreCreate = "create table if not exists "+store+"(" +
+//            "id_store text PRIMARY KEY," +
+//            "username text," +
+//            "create_at datetime default current_timestamp)";
 
-    private String tbDetailStoreCreate = "create table if not exists "+store_detail+"(" +
-            "id_detail_store integer PRIMARY KEY AUTOINCREMENT," +
-            "id_store text," +
-            "name text," +
-            "address text," +
-            "latitude text," +
-            "longitude text," +
-            "description text," +
-            "image blob)";
+//    private String tbDetailStoreCreate = "create table if not exists "+store_detail+"(" +
+//            "id_detail_store integer PRIMARY KEY AUTOINCREMENT," +
+//            "id_store text," +
+//            "name text," +
+//            "address text," +
+//            "latitude text," +
+//            "longitude text," +
+//            "description text," +
+//            "image blob)";
 
-    private String tbCategoryProductCreate = "create table if not exists "+category+"(" +
-            "id_category text primary_text," +
-            "id_store text," +
-            "name text," +
-            "create_at datetime default current_timestamp)";
+//    private String tbCategoryProductCreate = "create table if not exists "+category+"(" +
+//            "id_category text primary_text," +
+//            "id_store text," +
+//            "name text," +
+//            "create_at datetime default current_timestamp)";
 
-    private String tbProductCreate = "create table if not exists "+product+"(" +
-            "id_product text PRIMARY KEY," +
-            "id_category integer," +
-            "id_store text," +
-            "create_at datetime default current_timestamp)";
+//    private String tbProductCreate = "create table if not exists "+product+"(" +
+//            "id_product text PRIMARY KEY," +
+//            "id_category integer," +
+//            "id_store text," +
+//            "create_at datetime default current_timestamp)";
 
-    private String tbDetailProduct = "create table if not exists "+product_detail+"(" +
-            "id_detail_product integer primary key AUTOINCREMENT," +
-            "id_product text," +
-            "name text," +
-            "price_buy real," +
-            "price_sell real," +
-            "qty integer," +
-            "description text," +
-            "image blob)";
+//    private String tbDetailProduct = "create table if not exists "+product_detail+"(" +
+//            "id_detail_product integer primary key AUTOINCREMENT," +
+//            "id_product text," +
+//            "name text," +
+//            "price_buy real," +
+//            "price_sell real," +
+//            "qty integer," +
+//            "description text," +
+//            "image blob)";
 
     private String tbOrderCreate = "create table if not exists "+order+"(" +
             "id_order text PRIMARY KEY," + //generate from user+timespan
