@@ -1,4 +1,4 @@
-package com.lupawktu.possqlite.db.model
+package za.co.jacobs.mj.database.model
 
 import androidx.room.*
 
@@ -6,7 +6,7 @@ import androidx.room.*
 data class Category(
     @PrimaryKey(autoGenerate = false)
     val idCategory: String,
-    val storeId: String,
+    val idStore: String,
     val name: String,
     val createdAt: Long = System.currentTimeMillis()
 )

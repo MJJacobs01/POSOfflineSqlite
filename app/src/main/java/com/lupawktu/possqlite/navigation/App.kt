@@ -29,11 +29,22 @@ fun App(activity: Activity) {
         },
         state = scaffoldState,
         content = {
-            when (currentScreen) {
-                is Screens.Login -> {
-                    LoginScreen(navController = navController)
-                }
-            }
+            CurrentScreenToDisplay(
+                navController = navController,
+                currentScreen = currentScreen
+            )
         }
     )
+}
+
+@Composable
+private fun CurrentScreenToDisplay(
+    navController: NavigationController,
+    currentScreen: Any
+) {
+    when (currentScreen) {
+        is Screens.Login -> {
+            LoginScreen(navController = navController)
+        }
+    }
 }
