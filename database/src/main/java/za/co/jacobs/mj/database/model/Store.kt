@@ -1,11 +1,11 @@
-package com.lupawktu.possqlite.db.model
+package za.co.jacobs.mj.database.model
 
 import androidx.room.*
 
 @Entity
 data class Store(
     @PrimaryKey(autoGenerate = false)
-    val storeId: String,
+    val idStore: String,
     val storeName: String,
     val createdAt: Long = System.currentTimeMillis()
 )

@@ -1,4 +1,4 @@
-package com.lupawktu.possqlite.db.model
+package za.co.jacobs.mj.database.model
 
 import androidx.room.*
 
@@ -8,5 +8,5 @@ data class Product(
     val idProduct: String,
     val idCategory: Int,
     val idStore: String,
-    val createdAt: Long
+    val createdAt: Long = System.currentTimeMillis()
 )

@@ -1,4 +1,4 @@
-package com.lupawktu.possqlite.db.model
+package za.co.jacobs.mj.database.model
 
 import androidx.room.*
 

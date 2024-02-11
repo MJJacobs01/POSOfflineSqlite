@@ -1,17 +1,17 @@
-package com.lupawktu.possqlite.db.model
+package za.co.jacobs.mj.database.model
 
 import androidx.room.*
 import androidx.room.ColumnInfo.Companion.BLOB
 
 @Entity
-data class StoreDetails(
+data class ProductDetail(
     @PrimaryKey(autoGenerate = true)
-    val storeDetailId:Int,
-    val storeId:String,
+    val idProductDetail:Long,
+    val idProduct:String,
     val name:String,
-    val address:String,
-    val latitude:String,
-    val longitude:String,
+    val priceBuy:Double,
+    val priceSell:Double,
+    val qty:Int,
     val description:String,
     @ColumnInfo(typeAffinity = BLOB)
     val image:ByteArray
@@ -20,7 +20,7 @@ data class StoreDetails(
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
         
-        other as StoreDetails
+        other as ProductDetail
         
         return image.contentEquals(other.image)
     }
