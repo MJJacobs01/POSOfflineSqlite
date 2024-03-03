@@ -23,7 +23,7 @@ import com.lupawktu.possqlite.utils.*
 @Composable
 fun LoginScreen(
     navController: NavigationController,
-    viewModel:LoginViewModel = viewModel(factory = ViewModelFactory)
+    viewModel: LoginViewModel = viewModel(factory = ViewModelFactory)
 ) {
     val scrollState = rememberScrollState()
     val state = viewModel.state
@@ -62,7 +62,7 @@ fun LoginScreen(
                 visualTransformation = PasswordVisualTransformation()
             )
             
-            Spacer(modifier = Modifier.height(halfPadding))
+            Spacer(modifier = Modifier.height(normalPadding))
             Button(
                 onClick = {
                     //  TODO: 2024/01/01 - Create function
@@ -88,14 +88,17 @@ fun LoginScreen(
             )
             
             Spacer(modifier = Modifier.height(halfPadding))
-            Text(
+            TextButton(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .clickable {
-                        //  TODO: 2024/01/01 - Create the function
-                    },
-                text = stringResource(R.string.forgot_password),
-                textAlign = TextAlign.End
+                    .align(
+                        alignment = Alignment.End
+                    ),
+                onClick = {
+                    //  TODO: 2024/01/01 - Create the function
+                },
+                content = {
+                    Text(text = stringResource(id = R.string.forgot_password))
+                }
             )
         }
     )

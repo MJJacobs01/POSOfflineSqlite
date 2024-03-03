@@ -1,6 +1,7 @@
-package za.co.jacobs.mj.database.model
+package za.co.jacobs.mj.database.user
 
 import androidx.room.*
+import kotlinx.datetime.*
 
 @Entity(indices = [Index(value = ["email"], unique = true)])
 data class User(
@@ -9,7 +10,8 @@ data class User(
     val name: String,
     val email: String,
     val level: String,
-    val createdAt: Long = System.currentTimeMillis(),
+    val createdAt: Long = Clock.System.now().epochSeconds,
     val password: String,
     val secretKey: String,
+    val isUserActive: Boolean
 )

@@ -1,8 +1,7 @@
-package za.co.jacobs.mj.database.dao
+package za.co.jacobs.mj.database.category
 
 import androidx.room.*
 import kotlinx.coroutines.flow.*
-import za.co.jacobs.mj.database.model.Category
 
 /**
  * Created by MJ Jacobs on 2024/02/11 at 12:09
@@ -15,8 +14,14 @@ interface CategoryDao {
     suspend fun insertCategory(category: Category)
     
     @Delete
-    suspend fun deleteCategory(idCategory: String)
+    suspend fun deleteCategory(category: Category)
     
     @Query("select * from category order by name asc")
     fun getAllCategories(): Flow<List<Category?>>
+    
+    @Query("select * from category where categoryId =:categoryId")
+    suspend fun getCategoryById(categoryId: String): Category?
+    
+    @Query("select * from category where storeId =:storeId")
+    fun getAllCategoriesByStoreId(storeId: String): Flow<List<Category?>>
 }

@@ -1,13 +1,13 @@
-package za.co.jacobs.mj.database.model
+package za.co.jacobs.mj.database.order_detail
 
 import androidx.room.*
 
 @Entity
-data class OrderDetails(
+data class OrderDetail(
     @PrimaryKey(autoGenerate = true)
-    val idOrderDetails: Int = 0,
-    val idOrder: String,
-    val idProduct: String,
+    val orderDetailId: Int = 0,
+    val orderId: String,
+    val productId: String,
     val name: String,
     val priceSell: Double,
     val totalPrice: Double,

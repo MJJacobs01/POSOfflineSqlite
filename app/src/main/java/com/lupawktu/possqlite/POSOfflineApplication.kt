@@ -1,4 +1,4 @@
-package com.lupawktu.possqlite.activity
+package com.lupawktu.possqlite
 
 import android.app.Application
 

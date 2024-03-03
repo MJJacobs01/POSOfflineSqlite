@@ -2,7 +2,7 @@ package com.lupawktu.possqlite.utils
 
 import androidx.lifecycle.*
 import androidx.lifecycle.viewmodel.*
-import com.lupawktu.possqlite.activity.*
+import com.lupawktu.possqlite.*
 import com.lupawktu.possqlite.features.login.*
 
 /**
