@@ -15,6 +15,9 @@ interface ProductDetailDao {
     @Delete
     suspend fun deleteProductDetail(productDetail: ProductDetail)
     
+    @Query("select * from productdetail where productDetailId =:productDetailId")
+    suspend fun getProductDetailByProductDetailId(productDetailId: Long): ProductDetail?
+    
     @Query("select * from productdetail where productId =:productId")
     suspend fun getProductDetailByProductId(productId: String): ProductDetail?
 }

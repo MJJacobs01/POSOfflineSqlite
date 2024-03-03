@@ -25,6 +25,7 @@ class DatabaseModuleImpl(
         POSDatabase::class.java,
         "POSDb"
     ).build()
+    
     override val categoryRepository: CategoryRepository
         get() = CategoryRepositoryImpl(categoryDao = db.categoryDao())
     override val orderRepository: OrderRepository
@@ -32,11 +33,11 @@ class DatabaseModuleImpl(
     override val orderDetailRepository: OrderDetailRepository
         get() = OrderDetailRepositoryImpl(orderDetailDao = db.orderDetailDao())
     override val productRepository: ProductRepository
-        get() = TODO("Not yet implemented")
+        get() = ProductRepositoryImpl(productDao = db.productDao())
     override val productDetailRepository: ProductDetailRepository
-        get() = TODO("Not yet implemented")
+        get() = ProductDetailRepositoryImpl(productDetailDao = db.productDetailDao())
     override val storeRepository: StoreRepository
-        get() = TODO("Not yet implemented")
+        get() = StoreRepositoryImpl(storeDao = db.storeDao())
     override val storeDetailRepository: StoreDetailRepository
         get() = TODO("Not yet implemented")
     override val userRepository: UserRepository

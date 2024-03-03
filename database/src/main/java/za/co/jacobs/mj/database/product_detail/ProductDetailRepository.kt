@@ -10,5 +10,7 @@ interface ProductDetailRepository {
     
     suspend fun deleteProductDetail(productDetailId: Long)
     
+    suspend fun getProductDetailByProductDetailId(productDetailId: Long): ProductDetail?
+    
     suspend fun getProductDetailByProductId(productId: String): ProductDetail?
 }

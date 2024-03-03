@@ -12,5 +12,7 @@ interface ProductRepository {
     
     suspend fun deleteProduct(productId: String)
     
+    suspend fun getProductByProductId(productId: String): Product?
+    
     fun getAllProducts(): Flow<List<Product?>>
 }

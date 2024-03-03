@@ -16,6 +16,9 @@ interface ProductDao {
     @Delete
     suspend fun deleteProduct(product: Product)
     
+    @Query("select * from product where productId =:productId")
+    suspend fun getProductByProductId(productId: String): Product?
+    
     @Query("select * from product order by createdAt desc")
     fun getAllProducts(): Flow<List<Product?>>
 }
