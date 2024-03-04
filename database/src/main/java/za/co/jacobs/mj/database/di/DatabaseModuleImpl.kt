@@ -39,7 +39,7 @@ class DatabaseModuleImpl(
     override val storeRepository: StoreRepository
         get() = StoreRepositoryImpl(storeDao = db.storeDao())
     override val storeDetailRepository: StoreDetailRepository
-        get() = TODO("Not yet implemented")
+        get() = StoreDetailRepositoryImpl(storeDetailDao = db.storeDetailDao())
     override val userRepository: UserRepository
-        get() = TODO("Not yet implemented")
+        get() = UserRepositoryImpl(userDao = db.userDao())
 }
